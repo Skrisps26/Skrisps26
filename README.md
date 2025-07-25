@@ -33,7 +33,7 @@
 `JavaScript` · `Python` · `Golang` · `C/C++` · `SQL`
 
 **Frameworks & Libraries:**  
-`React` · `Next.js` · `Node.js` · `Express` · `Django` · `FastAPI`
+`React` · `Next.js` · `Node.js` · `Express` · `Django`
 
 **Databases:**  
 `MongoDB` · `MySQL` · `PostgreSQL`
@@ -42,7 +42,7 @@
 `Git` · `Docker` · `Figma` · `Postman` · `VS Code`
 
 **ML & Media:**  
-`PyTorch` · `OpenCV` · `torchaudio` · `torchvision`
+`Numpy`·`Pandas`·`PyTorch` · `OpenCV` · `torchaudio` · `torchvision`
 
 ---
 
