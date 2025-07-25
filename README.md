@@ -39,7 +39,7 @@
 `MongoDB` · `MySQL` · `PostgreSQL`
 
 **Dev & Design Tools:**  
-`Git` · `Docker` · `Figma` · `Postman` · `VS Code`
+`Git` · `Docker`  · `Postman` · `VS Code`
 
 **ML & Media:**  
 `Numpy`·`Pandas`·`PyTorch` · `OpenCV` · `torchaudio` · `torchvision`
