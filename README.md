@@ -75,17 +75,10 @@ A Web3 app for creators to monetize content using NFTs and smart contracts.
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Skrisps26&show_icons=true&theme=radical" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Skrisps26&layout=compact&theme=radical" height="180"/>
-</p>
-
----
 
 ### 👀 Visitor Counter
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=Skrisps26&label=Profile%20Views&color=0e75b6&style=flat" alt="profile-views" />
+
 </p>
