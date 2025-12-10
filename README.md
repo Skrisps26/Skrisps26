@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sai Krishna</h1>
-<h3 align="center">AI Builder • Web3 Dev • Full-Stack Explorer @ VIT Chennai</h3>
+<h3 align="center">AI Builder • Full-Stack Developer @ VIT Chennai</h3>
 
 <p align="center">
   <a href="https://linkedin.com/in/sai-krishna-711a0b28b/" target="_blank">
@@ -82,3 +82,4 @@ A Web3 app for creators to monetize content using NFTs and smart contracts.
   <img src="https://komarev.com/ghpvc/?username=Skrisps26&label=Profile%20Views&color=0e75b6&style=flat" alt="profile-views" />
 
 </p>
+
