@@ -4,7 +4,7 @@
 
 <br/>
 
-Hey — I'm a second-year CS student who spends most of his time trying to make small models punch above their weight. Lately that means RL post-training, inference-time memory, and figuring out what's actually possible on a laptop GPU.
+Hey — I'm a third-year CS student who spends most of his time trying to make small models punch above their weight. Lately that means RL post-training, inference-time memory, and figuring out what's actually possible on a laptop GPU.
 
 I like problems where the constraint is the interesting part.
 
