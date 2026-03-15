@@ -1,85 +1,98 @@
-<h1 align="center">Hi 👋, I'm Sai Krishna</h1>
-<h3 align="center">AI Builder • Full-Stack Developer @ VIT Chennai</h3>
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,20,15&height=140&section=header&text=Sai%20Krishna&fontSize=42&fontColor=ffffff&fontAlignY=55&desc=CS%20%40%20VIT%20Chennai%20%C2%B7%20Building%20things%20that%20think&descSize=14&descAlignY=75&descColor=a0a0b0" width="100%"/>
+</div>
 
-<p align="center">
-  <a href="https://linkedin.com/in/sai-krishna-711a0b28b/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat&logoColor=white" />
-  </a>
-  <a href="mailto:saikrishnasprasad2642005@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-red?logo=gmail&style=flat&logoColor=white" />
-  </a>
-  <a href="https://github.com/Skrisps26" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&style=flat&logoColor=white" />
-  </a>
-</p>
+<br/>
+
+Hey — I'm a second-year CS student who spends most of his time trying to make small models punch above their weight. Lately that means RL post-training, inference-time memory, and figuring out what's actually possible on a laptop GPU.
+
+I like problems where the constraint is the interesting part.
+
+<br/>
 
 ---
 
-### 🧠 About Me
+### What I'm building
 
-- 🎓 CS Undergrad at **Vellore Institute of Technology, Chennai (2022–Present)**
-- 🤖 Building a **Deepfake Detection System** for images, videos, and audio using PyTorch
-- 🌐 Created a **Web3 platform** for creators using Solidity, NFTs, and MetaMask
-- 🧩 Designed an **OSINT CTF challenge** tracing deleted LinkedIn URLs via Git history
-- 🏆 **MongoDB Track Winner @ DevsHouse’25 Hackathon** | 4th Overall
-- 💬 Ask me about: AI Detection, OpenCV, FastAPI, Full Stack Dev, OSINT
-- 📍 Currently part of the **ACM VIT Chennai Tech Team**
+**[Qwen3-0.6B Reasoning Pipeline](https://github.com/Skrisps26)**
+&nbsp;·&nbsp; *active*
 
----
+Training a 0.6B model to reason using a 4-stage GRPO pipeline — SFT coldstart, RL on math, mode fusion, then generalization. At inference I attach a Hopfield episodic memory bank (~20MB) that retrieves similar past problems as context. The bet is that a sub-1B model with the right inference-time setup can match 7B+ on reasoning benchmarks.
 
-### 🛠️ Tech Stack
+<br/>
 
-**Languages:**  
-`JavaScript` · `Python` · `Golang` · `C/C++` · `SQL`
+**[PowerBench-Consumer](https://github.com/Skrisps26/powerbench)**
+&nbsp;·&nbsp; *complete*
 
-**Frameworks & Libraries:**  
-`React` · `Next.js` · `Node.js` · `Express` · `Django`
+Benchmarked LLM inference and GRPO training on an RTX 2050 (4GB VRAM) — extending DREAM:Lab's Jetson Orin AGX methodology to hardware most people actually own. The interesting finding: INT8 is 3× slower than FP16 on consumer GPUs, the opposite of what happens on the Jetson. Quantization benefits don't travel across hardware architectures.
 
-**Databases:**  
-`MongoDB` · `MySQL` · `PostgreSQL`
+```
+FP16  →  2,407ms  ·  13.29 tok/s  ·  PPL 14.80
+INT8  →  10,056ms ·  3.18  tok/s  ·  PPL 19.46
+INT4  →  3,965ms  ·  8.07  tok/s  ·  PPL 15.36
+```
 
-**Dev & Design Tools:**  
-`Git` · `Docker`  · `Postman` · `VS Code`
+<br/>
 
-**ML & Media:**  
-`Numpy`·`Pandas`·`PyTorch` · `OpenCV` · `torchaudio` · `torchvision`
+**[Neural Global Illumination Engine](https://github.com/Skrisps26)**
+&nbsp;·&nbsp; *complete*
 
----
+Reframed Global Illumination as a regression task — an MLP learns to predict radiance instead of ray-tracing it. Brought per-frame compute from 26ms down to 11ms with a +4.1dB PSNR improvement. Runs at 60+ FPS with dynamic lighting and moving occluders.
 
-### 🚀 Featured Projects
+<br/>
 
-#### 🎭 Deepfake Content Detector
-A unified AI system that detects fake **images, videos, and audio** using CNNs and signal analysis.  
-> 🛠 PyTorch · OpenCV · torchaudio · torchvision  
-> 🧪 Frame-level + waveform anomaly detection pipeline  
-> 🧱 Modular architecture across media formats
+**[Deepfake Detector](https://github.com/Skrisps26)**
+&nbsp;·&nbsp; *complete*
 
-#### 🕵️‍♂️ Link Recon OSINT Challenge
-A CTF challenge where users trace a deleted LinkedIn URL through GitHub commit history.  
-> 🔐 Git · GitHub · OSINT · CyberSec  
-> 🧩 Metadata forensics & version control tracing  
-> 🎯 Gamified for developer events
+Multimodal detection pipeline across video and audio. 85%+ accuracy, processes 10K+ frames and audio samples per batch in under 3 seconds.
 
-#### 🌐 Decentralized Creator Platform
-A Web3 app for creators to monetize content using NFTs and smart contracts.  
-> 💻 React · Solidity · MongoDB · Web3.js  
-> 🔗 MetaMask Integration + NFT Ownership Check
+<br/>
 
 ---
 
-### 🏆 Achievements
+### A few things I've picked up
 
-- 🥇 **MongoDB Track Winner @ DevsHouse’25** Hackathon  
-- 🏅 **4th Place Overall** among 100+ teams  
-- 🧠 Built a decentralized lending dApp with Solidity & React
+```python
+{
+  "research":  ["PyTorch", "GRPO", "QLoRA", "TRL", "HuggingFace Transformers"],
+  "cv / edge": ["OpenCV", "TFLite", "YOLO", "Taichi CUDA"],
+  "backend":   ["FastAPI", "Node.js", "Express", "MongoDB", "PostgreSQL"],
+  "cloud":     ["AWS Lambda", "Bedrock", "S3", "DynamoDB", "Step Functions"],
+  "languages": ["Python", "C", "C++", "JavaScript", "Go"],
+}
+```
+
+<br/>
 
 ---
 
+### Recognition
 
-### 👀 Visitor Counter
+Qualcomm Edge AI Hackathon 2025 — Finalist &nbsp;·&nbsp; top teams from 2000+ participants  
+DevsHouse '25 — MongoDB Track Winner &nbsp;·&nbsp; 4th overall
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=Skrisps26&label=Profile%20Views&color=0e75b6&style=flat" alt="profile-views" />
+<br/>
 
-</p>
+---
 
+<div align="center">
+
+<img height="155" src="https://github-readme-stats.vercel.app/api?username=Skrisps26&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&hide_title=true"/>
+&nbsp;&nbsp;
+<img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Skrisps26&layout=compact&theme=tokyonight&hide_border=true&langs_count=5&hide_title=true"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+<a href="https://linkedin.com/in/saik26">LinkedIn</a>
+&nbsp;·&nbsp;
+<a href="mailto:saikris.dev@gmail.com">saikris.dev@gmail.com</a>
+</div>
+
+<br/>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,20,15&height=80&section=footer" width="100%"/>
+</div>
