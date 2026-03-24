@@ -15,9 +15,13 @@ I like problems where the constraint is the interesting part.
 ### What I'm building
 
 **[Qwen3-0.6B Reasoning Pipeline](https://github.com/Skrisps26)**
-&nbsp;·&nbsp; *active*
+&nbsp;·&nbsp; *in progress*
 
-Training a 0.6B model to reason using a 4-stage GRPO pipeline — SFT coldstart, RL on math, mode fusion, then generalization. At inference I attach a Hopfield episodic memory bank (~20MB) that retrieves similar past problems as context. The bet is that a sub-1B model with the right inference-time setup can match 7B+ on reasoning benchmarks.
+Exploring whether sub-1B models can achieve strong reasoning via:
+- multi-stage RL post-training (SFT → RL on math → mode fusion)
+- inference-time episodic memory (Hopfield-style retrieval)
+
+Currently designing the training pipeline and evaluation setup.
 
 <br/>
 
