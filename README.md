@@ -34,8 +34,8 @@ INT4  →  3,965ms  ·  8.07  tok/s  ·  PPL 15.36
 
 <br/>
 
-**[Neural Global Illumination Engine](https://github.com/Skrisps26)**
-&nbsp;·&nbsp; *complete*
+**[Neural Global Illumination Engine](https://github.com/Skrisps26/neural_ray_tracer)**
+&nbsp;·&nbsp; *complete(kind of)*
 
 Reframed Global Illumination as a regression task — an MLP learns to predict radiance instead of ray-tracing it. Brought per-frame compute from 26ms down to 11ms with a +4.1dB PSNR improvement. Runs at 60+ FPS with dynamic lighting and moving occluders.
 
