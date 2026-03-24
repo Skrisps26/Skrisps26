@@ -14,6 +14,13 @@ I like problems where the constraint is the interesting part.
 
 ### What I'm building
 
+**[Neural Global Illumination Engine](https://github.com/Skrisps26/neural_ray_tracer)**
+&nbsp;·&nbsp; *research prototype*
+
+Reframed Global Illumination as a regression task — an MLP learns to predict radiance instead of ray-tracing it. Brought per-frame compute from 26ms down to 11ms with a +4.1dB PSNR improvement. Runs at 60+ FPS with dynamic lighting and moving occluders.
+
+<br/>
+
 **[Qwen3-0.6B Reasoning Pipeline](https://github.com/Skrisps26)**
 &nbsp;·&nbsp; *in progress*
 
@@ -23,12 +30,17 @@ Exploring whether sub-1B models can achieve strong reasoning via:
 
 Currently designing the training pipeline and evaluation setup.
 
+Repo will be made public once i finish the training pipeline
+
+
 <br/>
 
 **[PowerBench-Consumer](https://github.com/Skrisps26/powerbench)**
 &nbsp;·&nbsp; *complete*
 
-Benchmarked LLM inference and GRPO training on an RTX 2050 (4GB VRAM) — extending DREAM:Lab's Jetson Orin AGX methodology to hardware most people actually own. The interesting finding: INT8 is 3× slower than FP16 on consumer GPUs, the opposite of what happens on the Jetson. Quantization benefits don't travel across hardware architectures.
+Benchmarked LLM inference and GRPO training on an RTX 2050 (4GB VRAM), extending DREAM:Lab’s Jetson Orin AGX methodology to consumer GPUs.
+
+Key finding: INT8 inference is ~3× slower than FP16 on consumer GPUs — the opposite of Jetson-class hardware. Quantization gains are not portable across architectures.
 
 ```
 FP16  →  2,407ms  ·  13.29 tok/s  ·  PPL 14.80
@@ -38,18 +50,17 @@ INT4  →  3,965ms  ·  8.07  tok/s  ·  PPL 15.36
 
 <br/>
 
-**[Neural Global Illumination Engine](https://github.com/Skrisps26/neural_ray_tracer)**
-&nbsp;·&nbsp; *complete(kind of)*
+**[NEXUS — Neural Embedding eXtended Unified Search](https://github.com/skrisps26/nexus)**
+&nbsp;·&nbsp; *research prototype*
 
-Reframed Global Illumination as a regression task — an MLP learns to predict radiance instead of ray-tracing it. Brought per-frame compute from 26ms down to 11ms with a +4.1dB PSNR improvement. Runs at 60+ FPS with dynamic lighting and moving occluders.
+Built a semantic search system exploring system-level improvements to retrieval and caching.
 
-<br/>
+- Soft cluster assignments for better semantic routing  
+- Entropy-adaptive thresholds for cache decisions  
+- Two-level cache (SimHash + cluster routing) for sub-linear lookup  
+- In-process HNSW for low-latency retrieval  
 
-**[Deepfake Detector](https://github.com/Skrisps26)**
-&nbsp;·&nbsp; *complete*
-
-Multimodal detection pipeline across video and audio. 85%+ accuracy, processes 10K+ frames and audio samples per batch in under 3 seconds.
-
+Includes a full research-style write-up analyzing trade-offs and failure modes.
 <br/>
 
 ---
